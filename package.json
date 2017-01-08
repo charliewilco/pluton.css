@@ -1,0 +1,24 @@
+{
+  "name": "pluton.css",
+  "version": "1.0.0",
+  "description": "Subset of Obsidian.css",
+  "main": "source.css",
+  "browser": "index.css",
+  "scripts": {
+    "build": "postcss -u postcss-import -u autoprefixer -o index.css source.css",
+    "dev": "watch 'npm run build' .",
+    "prerelease": "npm run build"
+  },
+  "keywords": [],
+  "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "postcss-cli": "^2.6.0",
+    "postcss-import": "^9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
