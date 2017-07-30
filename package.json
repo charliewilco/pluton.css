@@ -6,7 +6,9 @@
   "browser": "dist/pluton.css",
   "repository": "charlespeters/pluton.css",
   "scripts": {
-    "build": "postcss index.css -o dist/pluton.css",
+    "build": "npm run build:browser && npm run build:minify",
+    "build:browser": "postcss index.css -o dist/pluton.css",
+    "build:minify": "postcss dist/pluton.min.css -u cssnano -o dist/pluton.min.css",
     "dev": "watch 'npm run build' .",
     "prepublish": "npm run build",
     "lint": "wilco *.css"
@@ -16,6 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
+    "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.0",
     "postcss-import": "^10.0.0",
     "wilco": "^0.2.0"
