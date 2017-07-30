@@ -1,6 +1,6 @@
 {
   "name": "pluton.css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Subset of Obsidian.css",
   "main": "index.css",
   "browser": "dist/pluton.css",
@@ -8,7 +8,7 @@
   "scripts": {
     "build": "postcss index.css -o dist/pluton.css",
     "dev": "watch 'npm run build' .",
-    "prerelease": "npm run build",
+    "prepublish": "npm run build",
     "lint": "wilco *.css"
   },
   "keywords": [],
