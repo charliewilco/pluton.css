@@ -1,6 +1,6 @@
 {
   "name": "pluton.css",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Subset of Obsidian.css",
   "main": "index.css",
   "browser": "dist/pluton.css",
