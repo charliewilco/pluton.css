@@ -4,7 +4,7 @@ Obsidian.css Lite -- A small subset of Obsidian.css, common utilities classes, r
 
 ## Install
 
-```
+```shell
 yarn add pluton.css
 ```
 

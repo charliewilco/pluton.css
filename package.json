@@ -2,23 +2,37 @@
   "name": "pluton.css",
   "version": "1.0.0",
   "description": "Subset of Obsidian.css",
-  "main": "source.css",
-  "browser": "index.css",
+  "main": "index.css",
+  "browser": "dist/pluton.css",
+  "repository": "charlespeters/pluton.css",
   "scripts": {
-    "build": "postcss -u postcss-import -u autoprefixer -o index.css source.css",
+    "build": "postcss index.css -o dist/pluton.css",
     "dev": "watch 'npm run build' .",
-    "prerelease": "npm run build"
+    "prerelease": "npm run build",
+    "lint": "wilco *.css"
   },
   "keywords": [],
   "author": "charles peters <charlespeters42@gmail.com> (https://charlespeters.net)",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
-    "postcss-cli": "^2.6.0",
-    "postcss-import": "^9.0.0"
+    "postcss-cli": "^4.1.0",
+    "postcss-import": "^10.0.0",
+    "wilco": "^0.2.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "autoprefixer": {
+        "remove": true
+      },
+      "postcss-import": {
+        "skipDuplicates": true
+      }
+    }
+  }
 }
