@@ -88,23 +88,15 @@
 
 :root {
   /* Colors */
-  --color-1: #147AAB;
   --color-1: var(--blue);
-  --color-2: #D04D36;
   --color-2: var(--red);
-  --color-3: #FFBA00;
   --color-3: var(--yellow);
-  --color-4: #1D889D;
   --color-4: var(--bluegreen);
-  --color-5: #BCBCBC;
   --color-5: var(--litegray);
 
   /* Font Choices */
-  --headlines: -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'SF UI Text', 'Segoe UI', 'Fira Sans', 'Roboto', 'Noto Sans', 'Droid Sans', 'Helvetica Neue', 'Lucida Grande', sans-serif;
   --headlines: var(--ff-sans-serif);
-  --default: -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', 'SF UI Text', 'Segoe UI', 'Fira Sans', 'Roboto', 'Noto Sans', 'Droid Sans', 'Helvetica Neue', 'Lucida Grande', sans-serif;
   --default: var(--ff-sans-serif);
-  --body-text: 'Athelas', 'Charter', 'Hoefler Text', 'Baskerville', 'Droid Serif', 'Georgia', 'Times', serif;
   --body-text: var(--ff-serif);
 }
 
