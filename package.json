@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npm run build:browser && npm run build:minify",
     "build:browser": "postcss index.css -o dist/pluton.css",
-    "build:minify": "postcss dist/pluton.min.css -u cssnano -o dist/pluton.min.css",
+    "build:minify": "postcss dist/pluton.css --map=false -u cssnano -o dist/pluton.min.css",
     "dev": "watch 'npm run build' .",
     "prepublish": "npm run build",
     "lint": "wilco *.css"
